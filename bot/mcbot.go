@@ -10,8 +10,6 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/google/uuid"
-
 	"github.com/AnAverageBeing/mclib/chat"
 	"github.com/AnAverageBeing/mclib/data/packetid"
 	mcnet "github.com/AnAverageBeing/mclib/net"
@@ -21,8 +19,11 @@ import (
 
 // ProtocolVersion is the protocol version number of minecraft net protocol
 const (
+	DefaultPort = mcnet.DefaultPort
+)
+
+var (
 	ProtocolVersion = 762
-	DefaultPort     = mcnet.DefaultPort
 )
 
 type JoinOptions struct {
@@ -105,16 +106,26 @@ func (c *Client) join(addr string, options JoinOptions) error {
 		return LoginErr{"handshake", err}
 	}
 	// Login Start
-	c.UUID, err = uuid.Parse(c.Auth.UUID)
-	PlayerUUID := pk.Option[pk.UUID, *pk.UUID]{
-		Has: err == nil,
-		Val: pk.UUID(c.UUID),
+	if ProtocolVersion == 759 || ProtocolVersion == 760 {
+		err = conn.WritePacket(pk.Marshal(
+			packetid.LoginStart,
+			pk.String(c.Auth.Name),
+			pk.Boolean(false),
+			pk.Boolean(false),
+		))
+	} else if ProtocolVersion > 760 {
+		err = conn.WritePacket(pk.Marshal(
+			packetid.LoginStart,
+			pk.String(c.Auth.Name),
+			pk.Boolean(false),
+		))
+	} else {
+		err = conn.WritePacket(pk.Marshal(
+			packetid.LoginStart,
+			pk.String(c.Auth.Name),
+		))
 	}
-	err = conn.WritePacket(pk.Marshal(
-		packetid.LoginStart,
-		pk.String(c.Auth.Name),
-		PlayerUUID,
-	))
+
 	if err != nil {
 		return LoginErr{"login start", err}
 	}

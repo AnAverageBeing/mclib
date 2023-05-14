@@ -1,8 +1,8 @@
 package basic
 
 import (
-	"github.com/Tnze/go-mc/data/packetid"
-	pk "github.com/Tnze/go-mc/net/packet"
+	"github.com/AnAverageBeing/mclib/data/packetid"
+	pk "github.com/AnAverageBeing/mclib/net/packet"
 )
 
 func (p *Player) handleKeepAlivePacket(packet pk.Packet) error {

@@ -4,8 +4,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/Tnze/go-mc/data/packetid"
-	pk "github.com/Tnze/go-mc/net/packet"
+	"github.com/AnAverageBeing/mclib/data/packetid"
+	pk "github.com/AnAverageBeing/mclib/net/packet"
 )
 
 type Events struct {

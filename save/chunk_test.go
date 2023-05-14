@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/Tnze/go-mc/save/region"
+	"github.com/AnAverageBeing/mclib/save/region"
 )
 
 func TestColumn(t *testing.T) {

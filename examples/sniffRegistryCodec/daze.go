@@ -9,12 +9,12 @@ import (
 
 	//"github.com/mattn/go-colorable"
 
-	"github.com/Tnze/go-mc/bot"
-	"github.com/Tnze/go-mc/bot/basic"
-	_ "github.com/Tnze/go-mc/data/lang/zh-cn"
-	"github.com/Tnze/go-mc/data/packetid"
-	"github.com/Tnze/go-mc/nbt"
-	pk "github.com/Tnze/go-mc/net/packet"
+	"github.com/AnAverageBeing/mclib/bot"
+	"github.com/AnAverageBeing/mclib/bot/basic"
+	_ "github.com/AnAverageBeing/mclib/data/lang/zh-cn"
+	"github.com/AnAverageBeing/mclib/data/packetid"
+	"github.com/AnAverageBeing/mclib/nbt"
+	pk "github.com/AnAverageBeing/mclib/net/packet"
 )
 
 var (

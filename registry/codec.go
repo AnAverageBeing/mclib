@@ -1,8 +1,8 @@
 package registry
 
 import (
-	"github.com/Tnze/go-mc/chat"
-	"github.com/Tnze/go-mc/nbt"
+	"github.com/AnAverageBeing/mclib/chat"
+	"github.com/AnAverageBeing/mclib/nbt"
 )
 
 type NetworkCodec struct {

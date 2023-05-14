@@ -4,7 +4,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/Tnze/go-mc/nbt"
+	"github.com/AnAverageBeing/mclib/nbt"
 )
 
 func (v *Value) TagType() byte { return v.tag }

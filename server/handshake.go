@@ -1,8 +1,8 @@
 package server
 
 import (
-	"github.com/Tnze/go-mc/net"
-	pk "github.com/Tnze/go-mc/net/packet"
+	"github.com/AnAverageBeing/mclib/net"
+	pk "github.com/AnAverageBeing/mclib/net/packet"
 )
 
 func (s *Server) handshake(conn *net.Conn) (protocol int32, intention int32, err error) {

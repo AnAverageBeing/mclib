@@ -6,14 +6,14 @@ import (
 
 	//"github.com/mattn/go-colorable"
 
-	"github.com/Tnze/go-mc/bot"
-	"github.com/Tnze/go-mc/bot/basic"
-	"github.com/Tnze/go-mc/bot/msg"
-	"github.com/Tnze/go-mc/bot/playerlist"
-	"github.com/Tnze/go-mc/chat"
-	_ "github.com/Tnze/go-mc/data/lang/en-us"
-	"github.com/Tnze/go-mc/data/packetid"
-	pk "github.com/Tnze/go-mc/net/packet"
+	"github.com/AnAverageBeing/mclib/bot"
+	"github.com/AnAverageBeing/mclib/bot/basic"
+	"github.com/AnAverageBeing/mclib/bot/msg"
+	"github.com/AnAverageBeing/mclib/bot/playerlist"
+	"github.com/AnAverageBeing/mclib/chat"
+	_ "github.com/AnAverageBeing/mclib/data/lang/en-us"
+	"github.com/AnAverageBeing/mclib/data/packetid"
+	pk "github.com/AnAverageBeing/mclib/net/packet"
 )
 
 const timeout = 45

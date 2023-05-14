@@ -15,10 +15,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Tnze/go-mc/data/packetid"
-	"github.com/Tnze/go-mc/net"
-	"github.com/Tnze/go-mc/net/CFB8"
-	pk "github.com/Tnze/go-mc/net/packet"
+	"github.com/AnAverageBeing/mclib/data/packetid"
+	"github.com/AnAverageBeing/mclib/net"
+	"github.com/AnAverageBeing/mclib/net/CFB8"
+	pk "github.com/AnAverageBeing/mclib/net/packet"
 )
 
 // Auth includes an account

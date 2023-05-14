@@ -16,16 +16,16 @@ import (
 
 	//"github.com/mattn/go-colorable"
 
-	"github.com/Tnze/go-mc/bot"
-	"github.com/Tnze/go-mc/bot/basic"
-	"github.com/Tnze/go-mc/bot/msg"
-	"github.com/Tnze/go-mc/bot/playerlist"
-	"github.com/Tnze/go-mc/bot/screen"
-	"github.com/Tnze/go-mc/bot/world"
-	"github.com/Tnze/go-mc/chat"
-	"github.com/Tnze/go-mc/data/item"
-	_ "github.com/Tnze/go-mc/data/lang/zh-cn"
-	"github.com/Tnze/go-mc/level"
+	"github.com/AnAverageBeing/mclib/bot"
+	"github.com/AnAverageBeing/mclib/bot/basic"
+	"github.com/AnAverageBeing/mclib/bot/msg"
+	"github.com/AnAverageBeing/mclib/bot/playerlist"
+	"github.com/AnAverageBeing/mclib/bot/screen"
+	"github.com/AnAverageBeing/mclib/bot/world"
+	"github.com/AnAverageBeing/mclib/chat"
+	"github.com/AnAverageBeing/mclib/data/item"
+	_ "github.com/AnAverageBeing/mclib/data/lang/zh-cn"
+	"github.com/AnAverageBeing/mclib/level"
 )
 
 var (

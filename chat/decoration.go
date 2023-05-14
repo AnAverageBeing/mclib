@@ -3,7 +3,7 @@ package chat
 import (
 	"io"
 
-	pk "github.com/Tnze/go-mc/net/packet"
+	pk "github.com/AnAverageBeing/mclib/net/packet"
 )
 
 type Decoration struct {

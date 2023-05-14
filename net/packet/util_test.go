@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	pk "github.com/Tnze/go-mc/net/packet"
+	pk "github.com/AnAverageBeing/mclib/net/packet"
 )
 
 func ExampleAry_WriteTo() {

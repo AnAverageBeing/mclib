@@ -7,7 +7,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/Tnze/go-mc/nbt"
+	"github.com/AnAverageBeing/mclib/nbt"
 )
 
 // Chunk is 16* chunk

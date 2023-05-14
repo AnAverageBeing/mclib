@@ -2,7 +2,7 @@
 
 package se_no
 
-import "github.com/Tnze/go-mc/chat"
+import "github.com/AnAverageBeing/mclib/chat"
 
 func init() { chat.SetLanguage(Map) }
 
